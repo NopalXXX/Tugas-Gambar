@@ -1,0 +1,163 @@
+header{
+   background-color:#172239;
+   height: 150px;
+   padding: 20px;
+   color:white;
+   text-align: center;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0,3s;
+}
+.kotak{
+    background-color: lightblue;
+    color:black;
+    width: 500;
+    height: 400;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 20px;
+}
+.tengah{
+    text-align: center;
+}
+.kiri{
+    text-align: left;
+}
+/* Role Hero */
+.role-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.role-card {
+    background: #172239;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border: 1px solid #283653;
+    transition: 0.3s;
+}
+
+.role-card:hover {
+    transform: translateY(-8px);
+    border-color: #ff4655;
+}
+
+.role-card h3 {
+    color: #ff4655;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.role-card p {
+    color: #ccc;
+    line-height: 1.7;
+}
+
+/* Cara Bermain */
+.cara {
+    background:lightblue;
+    border-radius: 20px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.step {
+    background:#172239;
+    padding: 25px 15px;
+    border-radius: 10px;
+}
+
+.step span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff4655;
+}
+
+.step h3 {
+    margin: 15px 0;
+}
+
+.step p {
+    color: #bbb;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Tips */
+.tips-container {
+    max-width: 650px;
+    margin: 30px auto 0;
+    text-align: left;
+}
+
+.tip {
+    background:lightblue;
+    padding: 18px;
+    margin-bottom: 12px;
+    border-radius: 7px;
+    border-left: 4px solid #ff4655;
+}
+
+/* Footer */
+footer {
+    background: #080d19;
+    text-align: center;
+    padding: 35px 15px;
+    color: #aaa;
+    line-height: 2;
+}
+
+footer h3 {
+    color: #ff4655;
+}
+
+/* Responsive HP */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .role-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+    .role-container {
+        grid-template-columns: 1fr;
+    }
+}
